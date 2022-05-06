@@ -33,6 +33,7 @@ export const Grid = styled.div`
     .active{
         background: #2C635D;
         color:#fefefe;
+        
     }
 
 
@@ -87,8 +88,15 @@ export const Masonry = styled.div`
 `
 
 export const Mission = styled.section`
-  width:80%;
-  margin: 7rem auto;
+ 
+  padding:5rem 0;
+  background:#F3F8FE;
+  text-align:center;
+
+  .wrap{
+      width:90%;
+      margin: 7rem auto;
+  }
 
   .img-container{
       margin: 6rem 0;
@@ -100,15 +108,16 @@ export const Modal = styled.div`
  flex-direction:column;
  align-items:center;
 
- padding: 3rem 2rem;
- border-radius:.7rem;
- box-shadow:0px 9.25117px 18.5023px 9.25117px #F6F6F6;
+ padding: 3rem 0rem;
+ /* border-radius:.7rem; */
+ /* box-shadow:0px 9.25117px 18.5023px 9.25117px #F6F6F6; */
 
 .modal-img{
     background:#E5F9F4;
-    border-radius:50px;
+    border-radius:50%;
     padding:.7rem !important;
-    margin-bottom:5rem;
+    margin-bottom:2rem;
+    box-shadow:0px 9px 17px 0px rgba(21, 34, 58, .13) ;
 
 }
 
@@ -123,4 +132,42 @@ export const Modal = styled.div`
 
      
  }
+`
+
+
+export const Banner = styled.section`
+ width:100%;
+ height:60vh;
+ background:url('/images/banner.jpg');
+ background-size:cover;
+ text-align:center;
+
+ position:relative;
+
+ .wrap{
+    width:80%;
+    margin:auto;
+    color:#fefefe;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    p{
+        margin:4rem 0;
+    }
+
+ }
+
+`
+
+export const Header = styled.div`
+text-align:center;
+`
+
+export const Product = styled.div`
+    width:80%;
+    margin:7rem auto;
+    
 `

@@ -17,7 +17,7 @@ const Hero = () => {
                 </HeroTitle>
             </HeroHead>
             <HeroImg>
-                        <Image src="/images/hero-img.png" alt='hero img' width={300} height='500' />
+                        <Image src="/images/casual-life-3d-likes.png" alt='hero img' width={300} height='250' />
                     </HeroImg>
         </div>
        
