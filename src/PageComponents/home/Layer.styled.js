@@ -167,7 +167,6 @@ text-align:center;
 `
 
 export const Product = styled.div`
-    /* width:90%; */
     margin:7rem auto;
     background:#F8F8F7;
 
@@ -292,13 +291,52 @@ export const Program = styled.section`
             
             p{
                 width: 80%;
-                /* line-height: 1.9; */
                 margin:1rem 0;
             }
 
             a{
                 font-weight:bold;
             }
+        }
+    }
+`
+
+
+export const Checkout = styled.div`
+    background:#F8F8F7;
+    margin-bottom:5rem;
+
+    .wrap{
+        width:80%;
+        margin:auto;
+        padding:4rem 0;
+        
+        text-align:center !important;
+
+       
+
+    }
+
+`
+
+export const Dropbox = styled.div`
+
+    .wrap{
+        width:80%;
+        margin:auto;
+        background:#54BB6A;
+        color:#fefefe;
+        padding:2rem;
+
+        p{
+            line-height:1.5;
+            margin: 3rem 0;
+            width: 80%;
+        }
+
+        .btn{
+            display:block;
+            width:20%;
         }
     }
 `

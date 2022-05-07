@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import { FaBeer } from 'react-icons/fa';
 
-import { Service,Grid,ServiceOption, List, Masonry, Mission, Modal, Banner, Product, Header, GridBand, Program } from './Layer.styled'
+import { Service,Grid,ServiceOption, List, Masonry, Mission, Modal, Banner, Product, Header, GridBand, Program, Checkout, Dropbox } from './Layer.styled'
 import Title from '../../components/Title/Title';
 import Button from '../../Components/Button/Button';
 import Link from 'next/link';
@@ -11,7 +11,7 @@ import Link from 'next/link';
 const Layer = () => {
   return (
     <>
-        <div >
+        <div>
             <Service >
                 <h3>Service</h3>
                 <Title text='We Provide Best Services'/>
@@ -204,7 +204,7 @@ const Layer = () => {
                   <div className='program-item'>
                     <h2>reseller program</h2>
                     <div className='icon'>
-                      <Image src='/icons/chart.ico' alt='fintech icon' width={50} height={50}  />
+                      <Image src='/icons/trolley.ico' alt='fintech icon' width={50} height={50}  />
                     </div>
                     <h3>Ecommerce</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
@@ -216,7 +216,7 @@ const Layer = () => {
                   <div className='program-item'>
                     <h2>digital marketing program</h2>
                     <div className='icon'>
-                      <Image src='/icons/chart.ico' alt='fintech icon' width={50} height={50}  />
+                      <Image src='/icons/sale.ico' alt='fintech icon' width={50} height={50}  />
                     </div>
                     <h3>Marketing</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
@@ -228,7 +228,7 @@ const Layer = () => {
                   <div className='program-item'>
                     <h2>in-house program</h2>
                     <div className='icon'>
-                      <Image src='/icons/chart.ico' alt='fintech icon' width={50} height={50}  />
+                      <Image src='/icons/product.ico' alt='fintech icon' width={50} height={50}  />
                     </div>
                     <h3>Point of Sales</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
@@ -240,6 +240,23 @@ const Layer = () => {
                 </div>
               </div>
             </Program>
+
+            <Checkout>
+              <div className='wrap'>
+                <Title text='Not so sure yet what the advantages of Buzcure are?'/>
+                <div className='centered'>
+                  <Button text='Checkout it out' width='100%' bg='#54BB6A' color='#fefefe' />
+                </div>
+              </div>
+            </Checkout>
+
+            <Dropbox>
+              <div className='wrap'>
+                  <h3>Let&apos;s do it</h3>
+                  <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                  <div className='btn'><Button  text='Get started' border='1px solid #fefefe'  bg='#54BB6A' color='#fefefe' /></div>
+              </div>
+            </Dropbox>
 
 
 

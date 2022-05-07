@@ -18,3 +18,10 @@ a {
   box-sizing: border-box;
 }
 
+.centered{
+  width: 20rem;
+  margin:auto;
+  margin-top:3rem;
+  text-align:center;
+}
+

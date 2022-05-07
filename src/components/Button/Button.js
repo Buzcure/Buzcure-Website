@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 
-const Button = ({bg,color,text, border}) => {
+const Button = ({bg,color,text, border, width}) => {
   return(
       <>
-        <ButtonStyle bg={bg} color={color} border={border} >{text}</ButtonStyle>
+        <ButtonStyle bg={bg} color={color} width={width} border={border} >{text}</ButtonStyle>
       </>
   )
 };
@@ -15,7 +15,7 @@ export default Button;
 
 
 const ButtonStyle = styled.button`
-        border:none;
+        border: ${({border})=> border || 'none'};
         text-align: center;
         color: ${({color})=> color ||`#474645`};
         text-decoration: none;
@@ -23,6 +23,7 @@ const ButtonStyle = styled.button`
         box-shadow: 0px 4px 140px 10px ${({box})=> box || `rgba(255, 179, 0, 0.1)`};
      
         border-radius: .3rem;
+
 
         /* added padding and height */
         padding:1rem 2rem;
@@ -34,6 +35,7 @@ const ButtonStyle = styled.button`
         margin-right:1rem;
         display:block;
         min-width:17rem;
+        
 
        
 
@@ -50,7 +52,7 @@ const ButtonStyle = styled.button`
 
         @media only screen and (max-width: 600px) {
             display:block;
-            width:100%;
+            width:${({width})=> width || '100%' };
             margin-bottom:1rem;
         }
 
