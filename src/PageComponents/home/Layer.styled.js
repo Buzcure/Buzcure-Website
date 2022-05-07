@@ -167,7 +167,138 @@ text-align:center;
 `
 
 export const Product = styled.div`
-    width:80%;
+    /* width:90%; */
     margin:7rem auto;
+    background:#F8F8F7;
+
+    .wrap{
+        width:90%;
+        margin:auto;
+        padding:4rem 0;
+
+        .item{
+            margin-bottom:2rem;
+            padding:2rem 2rem;
+            background:#fefefe;
+            box-shadow: 3.50746px 3.50746px 3.50746px rgba(0, 0, 0, 0.1);
+
+            h3{
+                margin-bottom:2rem;
+                font-weight:bold;
+
+                &::after{
+                    content:'';
+                    width:25px;
+                    height:1px;
+                    background:#C4C4C4;
+                    display:block;
+                    margin-top:1rem;
+
+                }
+            }
+
+            p{
+                width: 80%;
+                line-height: 1.9;
+            }
+        }
+    }
+
     
+`
+
+
+export const GridBand = styled.section`
+
+
+    .wrap{
+        width:90%;
+        margin:auto;
+
+
+        .grid-item{
+            height:40rem;
+            margin-bottom:2.5rem;
+            
+
+            h3{
+                padding:2rem;
+                font-weight:bold;
+                font-size:2.3rem;
+                color:#fefefe;
+            }
+            
+        }
+
+        .item-1{
+            background:url('/images/banner.jpg');
+        }
+
+        .item-2{
+            background-image: url('/images/lady-in-shop.jpg');
+            background-size:cover;
+            background-position:center;
+        }
+
+        .item-3{
+            background:url('/images/meeting.jpg');
+            background-size:cover;
+        }
+
+
+    }
+
+`
+
+
+export const Program = styled.section`
+    padding:4rem 0;
+
+    .title{
+ 
+           text-align:center;
+           margin-bottom:6rem;
+          
+        }
+
+    .program-wrap{
+        width:80%;
+        margin:auto;
+        
+        
+        
+        .program-item{
+
+            margin: 4rem 0;
+            h2{
+                font-size:1.5rem;
+                text-transform:uppercase;
+                margin-bottom:2rem;
+
+                &::after{
+                    content:'';
+                    width:100%;
+                    height:1px;
+                    background:#333;
+                    display:block;
+                    margin-top:1rem;
+                }
+            }
+
+            .icon{
+                text-align:center;
+                margin:1rem 0;
+            }
+            
+            p{
+                width: 80%;
+                /* line-height: 1.9; */
+                margin:1rem 0;
+            }
+
+            a{
+                font-weight:bold;
+            }
+        }
+    }
 `

@@ -3,9 +3,10 @@ import Image from 'next/image'
 
 import { FaBeer } from 'react-icons/fa';
 
-import { Service,Grid,ServiceOption, List, Masonry, Mission, Modal, Banner, Product, Header } from './Layer.styled'
+import { Service,Grid,ServiceOption, List, Masonry, Mission, Modal, Banner, Product, Header, GridBand, Program } from './Layer.styled'
 import Title from '../../components/Title/Title';
 import Button from '../../Components/Button/Button';
+import Link from 'next/link';
 
 const Layer = () => {
   return (
@@ -151,11 +152,94 @@ const Layer = () => {
 
 
             <Product>
-              <Header>
-                <Title className='title' text='We take the work off your hands.'/>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-              </Header>
+              <div className='wrap'>
+                <div className='item'>
+                  <h3>Learn from Us</h3>
+                  <p>It is a long established fact that a reader will be distracted by the readable </p>
+                </div>
+                <div className='item'>
+                  <h3>Find a Partner</h3>
+                  <p>It is a long established fact that a reader will be distracted by the readable </p>
+                </div>
+                <div className='item'>
+                  <h3>Become a Partner</h3>
+                  <p>It is a long established fact that a reader will be distracted by the readable </p>
+                </div>
+              </div>
             </Product>
+
+            <GridBand>
+              <div className='wrap'>
+                 <div className='grid-item item-1'>
+                    <h3>New to business? No problem</h3>
+                 </div>
+                 <div className='grid-item item-2'>
+                    <h3>New to business? No problem</h3>
+                 </div>
+                 <div className='grid-item item-3'>
+                    <h3>New to business? No problem</h3>
+                 </div>
+              </div>
+            </GridBand>
+
+            <Program>
+              <div className='wrap'>
+                <div className='title'>
+                  <Title  text='Buzcure programs'/>
+                </div>
+                <div className='program-wrap'>
+
+                  <div className='program-item'>
+                    <h2>fintech program</h2>
+                    <div className='icon'>
+                      <Image src='/icons/chart.ico' alt='fintech icon' width={50} height={50}  />
+                    </div>
+                    <h3>Finance</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <Link href='#' className='learn-more'>
+                        <a>Learn more</a>
+                    </Link>
+                  </div>
+
+                  <div className='program-item'>
+                    <h2>reseller program</h2>
+                    <div className='icon'>
+                      <Image src='/icons/chart.ico' alt='fintech icon' width={50} height={50}  />
+                    </div>
+                    <h3>Ecommerce</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <Link href='#' className='learn-more'>
+                        <a>Learn more</a>
+                    </Link>
+                  </div>
+
+                  <div className='program-item'>
+                    <h2>digital marketing program</h2>
+                    <div className='icon'>
+                      <Image src='/icons/chart.ico' alt='fintech icon' width={50} height={50}  />
+                    </div>
+                    <h3>Marketing</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <Link href='#' className='learn-more'>
+                        <a>Learn more</a>
+                    </Link>
+                  </div>
+
+                  <div className='program-item'>
+                    <h2>in-house program</h2>
+                    <div className='icon'>
+                      <Image src='/icons/chart.ico' alt='fintech icon' width={50} height={50}  />
+                    </div>
+                    <h3>Point of Sales</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <Link href='#' className='learn-more'>
+                        <a>Learn more</a>
+                    </Link>
+                  </div>
+
+                </div>
+              </div>
+            </Program>
 
 
 
