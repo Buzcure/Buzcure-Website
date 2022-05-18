@@ -23,7 +23,7 @@ const Layer = () => {
                       <p>Point of sales</p>
                     </div>
                     <div className='grid-item'>
-                    <Image src='/icons/laptop/warehouse.ico' alt='point of sales' width={40} height={40} />
+                    <Image src='/icons/warehouse.ico' alt='point of sales' width={40} height={40} />
                       <p>Inventory</p>
                     </div>
                     <div className='grid-item active' >
@@ -39,9 +39,12 @@ const Layer = () => {
             </Service>
 
             <ServiceOption>
+            <div className='wrap'>
+              
+              <List>
               <Title className='title' text='New to business? No problem'/>
               <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-              <List>
+              
                 <ul>
                   <li>
                     <Image src='/icons/mark.svg' alt='mark' width={20} height={20} />
@@ -60,13 +63,16 @@ const Layer = () => {
                     <p>Distribution and logistics</p>
                   </li>
                 </ul>
+                <div className='btn'><Button  text='Sign up now' bg='#54BB6A' color='#fefefe' /></div>
               </List>
-              <div className='btn'><Button  text='Sign up now' bg='#54BB6A' color='#fefefe' /></div>
+             
 
               <Masonry>
-                <div></div>            
+                <div>
+                  <Image src='/images/people.png' alt='image' width={300} height={300} layout='intrinsic' objectFit="contain" />
+                </div>            
             </Masonry>
-
+            </div>
             </ServiceOption>
 
             <Mission>

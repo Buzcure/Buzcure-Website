@@ -17,8 +17,9 @@ const Hero = () => {
                 </HeroTitle>
             </HeroHead>
             <HeroImg>
-                        <Image src="/images/casual-life-3d-likes.png" alt='hero img' width={300} height='250' />
-                    </HeroImg>
+              
+                <Image src="/images/hero-img-bg.png" alt='hero img' width={700} height='700' layout='intrinsic' objectFit="contain" />
+            </HeroImg>
         </div>
        
 

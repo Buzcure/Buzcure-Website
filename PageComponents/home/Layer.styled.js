@@ -19,54 +19,125 @@ export const Service = styled.div`
         text-transform:uppercase;
     }
 
+     @media only screen and (max-width: 600px) {
+
+
+     }
+     @media only screen and (max-width: 900px) {}
+     @media only screen and (max-width: 1024px) {}
+
 `
 
 export const Grid = styled.div`
 
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    grid-template-rows:repeat(2,1fr);
-    grid-gap:1.7rem;
+    /* grid-template-rows:repeat(2,1fr); */
+    grid-gap:2rem;
 
     margin:auto;
+    
 
     .active{
         background: #2C635D;
         color:#fefefe;
+        box-shadow: 5px 15px 25px 10px rgba(39, 68, 69, 0.1);
+
+        
         
     }
 
+    
+
 
     .grid-item{
-        padding:2rem 4rem;
+        padding:2rem 2rem;
         border-radius:.7rem;
+        /* box-shadow: 5px 15px 25px 10px rgba(39, 68, 69, 0.1); */
+        transition: all .1s ease-in-out;
+
+        &:hover{
+        /* background: #2C635D; */
+        /* color:#fefefe; */
         box-shadow: 5px 15px 25px 10px rgba(39, 68, 69, 0.1);
+
+    }
 
         p{
             margin-top:1rem;
         }
     }
 
+    @media only screen and (min-width: 600px) {
+        grid-template-columns:repeat(4,1fr);
+        /* width:70%; */
+        
+     }
+
+     @media only screen and (min-width: 900px) {
+        /* grid-template-columns:repeat(4,15rem); */
+        /* width:60%; */
+
+        
+        
+     }
+
+     @media only screen and (min-width: 1024px) {
+        /* grid-template-columns:repeat(4,15rem); */
+        width:60%;
+        grid-gap:2.5rem;
+        
+     }
+
+
 `
 
 export const ServiceOption = styled.section`
      width:80%;
-    text-align:center;
-    margin:7rem auto;
+    /* text-align:center; */
+    margin:10rem auto;
+
+    .wrap{
+        display:grid;
+        grid-template-columns:1fr;
+        grid-auto-flow: column dense;
+      
+       
+        
+        /* width:70%; */
+        
+    }
+
+   
 
     .btn{
         margin-top:4rem;
     }
 
+
+    @media only screen and (min-width: 600px) {
+
+        .wrap{
+            grid-template-columns:repeat(2,1fr);
+            align-items: center;
+            justify-items: center;
+        }
+
+        
+
+     }
     
 `
 
 export const List = styled.div`
 
+text-align:center;
+
     ul{
         text-decoration:none;
         margin:0;
         margin-top:4rem;
+         
 
         
 
@@ -77,14 +148,37 @@ export const List = styled.div`
 
             p{
                 margin-left:1.5rem;
+                display:block;
             }
         }
+    }
+
+
+    @media only screen and (min-width: 600px) {
+        text-align:left;
+        padding-left:6rem;
+
+        p{
+            width:90%;
+        }
+
+    }
+
+    @media only screen and (min-width: 900px) {
+        text-align:left;
+
+        p{
+            width:70%;
+        }
+
     }
 
 `
 
 
 export const Masonry = styled.div`
+
+/* grid-column:1/2; */
 `
 
 export const Mission = styled.section`
